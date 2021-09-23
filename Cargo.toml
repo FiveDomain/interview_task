@@ -1,0 +1,14 @@
+[package]
+name = "interview_task"
+version = "0.1.0"
+authors = ["FiveDomain <40838497+FiveDomain@users.noreply.github.com>"]
+edition = "2018"
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1
+panic = 'abort'
+
+[dependencies]
+regex = "1.5.4"
